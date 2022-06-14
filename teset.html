@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuople</title>
+    <link rel="stylesheet" href="css/couple.css">
+    <!-- Phan cua logo -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <header >
+        <div class="in-header bin" >
+            <a href="index.html"id="logo">RAINBOW STUDIO</a>
+            <nav>
+                <ul id="menu">
+                    <li><a href="Couple.html"> COUPLE </a></li>
+                    <li><a href="vintage.html"> VINTAGE </a></li>
+                    <li><a href="yearbook.html"> YEARBOOK</a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                    <div class="logo3">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>   
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li> 
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="imgheader">
+        <h2>COUPLE</h2>
+    </div>
+
+    <!-- Phần footẻ -->
+    <footer>
+        <div class="foot-top" ><a href="#"><p align="center">FOLLOW ME & FACEBOOK</p></a> </div>
+   <!-- phần footer ở giữa ( logo, icon, hastag)  -->
+       <div class="foot">
+           <div id="foot-in">
+               <ion-icon name="logo-react"></ion-icon>
+               <p align="center">RAINBOW STUDIO</p>
+               <div class="foot-icon" align="center"> 
+                   <a href="#"> <ion-icon name="logo-facebook"></ion-icon></a>
+                   <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+                   <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                   <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+               </div>      
+           </div>
+       </div>
+        <div class="foot-1">
+           <div id="foot-in1">
+               <ul id="foot-font1">
+                   <h3 id="foot-font2">SERVICES</h3>
+                   <a href="#"><p>Photography</p></a>
+                   <a href="#"><p>Videography</p></a> 
+                   <a href="#"><p>Package</p></a>
+               </ul>
+               <nav>
+                   <h3 id="foot-font2">LINKS</h3>
+                   <ul id="foot-font1">
+                   <a href="#"><p> Home Page</p></a>
+                   <a href="#"><p>Testimonials</p> </a>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+       <!-- Phần cuối cùng footer -->
+       <div class="indo-lop">
+        <a href="https://www.facebook.com/Quangnhutphotoo/"> <p align="center">Thiết kế và vận hành bởi <span>Lê Quang Nhựt_Pc04740</span></p></a>
+       </div>
+    </footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+  $( document ).ready(function() {
+    $(window).scroll(function(){
+        if ($(this).scrollTop()){
+            $('header').addClass('sticky');
+        }else{
+            $('header').removeClass('sticky');
+        }
+    }); 
+});
+</script>
+</html>
