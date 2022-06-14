@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: 100vh;
+}
+@-webkit-keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1008;
+}
+header.sticky{
+  background: #000;
+  opacity: 0.9;
+  padding: 7px;
+}
+
+ul{
+    list-style: none;
+}
+/* canh menu da cấp */
+#menu li{
+  display: inline-block;
+  position: relative;
+}
+#menu ul{
+  width: 130px;
+  position: absolute;
+  display: none;
+  border-radius: 10px;
+}
+#menu li:hover>ul{
+  display: block;
+}
+/* HẾt phần canh menu da cấp */
+a{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2;
+}
+.bin{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.in-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1008;
+}
+#logo{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 2;
+}
+ul#menu{
+    display: flex;
+}
+.logo3{
+  display: flex;
+  padding:   4px;
+}
+ul#menu a {
+    padding: 0 15px;
+    display: block;
+    color: aliceblue;
+    font-size: 22px;
+    font-family: 'Changa', sans-serif;
+}
+ul#menu a:hover{
+  text-decoration: underline;
+}
+/* Nội dung 1 */
+article{
+  width: 1200px;
+  min-height: 700px;
+  background-color:white;
+  margin: auto;
+}
+article h3 {
+  font-family: 'Changa', sans-serif;
+  color: #404040;
+  padding-top:70px;
+  font-size: 30px;
+}
+article > p{
+  color: #404040;
+  padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  line-height: 1.5;
+}
+.col-25{
+  padding-top: 40px;
+  padding-left: 22px;
+  float:left;
+}
+.prod{
+  background-size: cover;
+  width: 350px;
+  min-height: 350px;
+  border-radius: 10px;
+  margin:5px;
+  padding:5px;
+  vertical-align: baseline;
+  transition:all 0.5s;
+}
+.prod-0{
+  background-image:  url(r1.png);
+}
+.prod-1{
+  background-image:  url(r3.png);
+}
+.prod-2{
+  background-image:  url(r2.png);
+}
+.prod-0>.name{
+  margin-top: 132px;
+  margin-left: 100px;
+  color: aliceblue;
+  font-size: 35px;
+  font-family: 'Changa', sans-serif;
+  text-transform: uppercase;
+  text-shadow:0 0 20px black; 
+}
+.prod-1>.name{
+  margin-top: 132px;
+  margin-left: 110px;
+  color: aliceblue;
+  font-size: 35px;
+  font-family: 'Changa', sans-serif;
+  text-transform: uppercase;
+  text-shadow:0 0 20px black; 
+}
+.prod-2>.name{
+  margin-top: 132px;
+  margin-left: 110px;
+  color: aliceblue;
+  font-size: 35px;
+  font-family: 'Changa', sans-serif;
+  text-transform: uppercase;
+  text-shadow:0 0 20px black; 
+}
+.prod:hover{
+  transform: translateY(-10px);
+}
+aside{
+  width: 100%;
+  min-height: 700px;
+  background-color:#AA8A60;
+  margin: auto;
+  float: left;
+}
+aside >img{
+  width:  450px;
+  height: 675px;
+  padding-top:  100px;
+  padding-left: 180px;
+  padding-bottom: 100px;
+}
+.containerHG{
+  width: 50%;
+  min-height: 100px;
+  background-color:#AA8A60;
+  margin: auto;
+  float: right;
+}
+
+.containerHG > .text-aside {
+  padding-top: 250px;
+  padding-right: 180px;
+  line-height:1.4;
+}
+.text-aside  p{
+  font-weight: bold;
+  font-family: 'Changa', sans-serif;
+  color:#514138;
+  font-size: 30px;
+}
+.text-aside>em{
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  color: #514138;
+  font-size: 22px;
+}
+.sead-more{
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 26px;
+  border-bottom: 2px solid #F5E2BC;
+}
+.sead-more1{
+
+  margin-top: 20px;
+  font-size: 25px;
+  border-bottom: 2px solid #F5E2BC;
+}
+.hoversd>a:hover{
+  color: aliceblue;
+}
+.hoversd a{
+  color: #F5E2BC;
+}
+.hoversd  ion-icon{ 
+  position: relative;
+  top: 4px;
+}
+/* Nội dung 2 */
+.conten2{
+  width: 50%;
+  min-height: 850px;
+  background-color:white;
+  text-align: justify;
+  margin: auto;
+  float: left;
+}
+.conten2 > .text-conten2{
+  padding: 250px 90px 20px 200px;
+}
+.text-conten2 h4{
+  color: #AA8A60;
+  font-size: 40px;
+  font-family: 'Bodoni Moda', serif;
+}
+.text-conten2 >p1{
+  color: #AA8A60;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.conten2-in{
+  width: 50%;
+  min-height: 850px;
+  background-color: white;
+  margin: auto;
+  float: right;
+}
+.conten2-in img {
+  width:  480px;
+  height: 675px;
+  padding-top: 100px;
+}
+/* Phan gioi thieu(about) */
+.about{
+  width: 100%;
+  min-height: 400px;
+  background-color:#AA8A60;
+  margin: auto;
+  float: left;
+}
+.about > #textabout{
+  line-height: 1.8;
+  padding: 100px 150px 0px 150px;
+}
+#textabout>h3{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+#textabout p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+/* Phan FROM THE BLOG */
+.caption{
+  width: 100%;
+  min-height: 800px;
+  margin: auto;
+  float: left;
+}
+.caption >h2{
+padding-top: 80px;
+  padding-bottom: 30px;
+  font-family: 'Changa', sans-serif;
+  color: #404040;
+  font-size: 25px;
+}
+.caption-1{
+  width: 33%;
+  padding-top: 30px;
+  float: left;
+}
+.san-tion{
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+.giva h3{
+  color: #000;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+}
+.giva>p{
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  color: rgb(125, 132, 138);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+#text-c{
+  line-height: 2;
+  padding-top: 15px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color:#514138;
+}
+.giva h3:hover{
+  color: #48D1CC;
+  text-decoration:none;
+}
+.san-tion img{
+  width: 420px;
+  height: 420px;
+  background-size: cover ;
+  transition: all 1s;
+}
+.san-tion img:hover{
+  transform: scale(1.05);
+}
+#r-m{
+  padding-top: 20px;
+  padding-bottom: 80px;
+  color: rgb(125, 132, 138);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+#r-m:hover{
+  color: #48D1CC;
+  text-decoration:none;
+}
+#r-m ion-icon{ 
+  position: relative;
+  top: 2px;
+}
+/* Phan footer */
+footer{
+  padding-top: 50px;
+  max-width: 100%;
+  min-height: 450px;
+  /* Chỗ này để màu nền(backgroud) */
+  margin: auto;
+  clear: both;
+}
+.foot-top{
+  width: 100%;
+  min-height: 15px;
+  background-color:#AA8A60;
+  margin: auto;
+  float: left;
+}
+.foot-top>a>p{
+  padding-top: 0px;
+  font-family: 'Changa', sans-serif;
+  color: #404040;
+  font-size: 22px;
+}
+.foot{
+  width: 50%;
+  min-height: 230px;
+
+  /* chỗ này cũng để màu nền */
+  margin: auto;
+  float: left;
+}
+#foot-in>ion-icon{
+  position: relative;
+  top: 20px;
+  width: 100%;
+  font-size: 80px;
+  color:#AA8A60;
+  animation :quay 3s infinite linear;
+}
+#foot-in>ion-icon:hover{
+  color: #48D1CC;
+}
+@keyframes quay {
+  0%{
+      transform:rotate(0deg);
+  }
+  100%{
+      transform:rotate(360deg);
+  }
+}
+#foot-in p{
+  padding-top: 30px;
+  font-size: 33px;
+  font-family: 'Yellowtail', cursive;
+  letter-spacing: 2;
+}
+.foot-icon a ion-icon{
+  margin: 15px;
+  font-size: 26px;
+  color: #AA8A60;
+}
+.foot-icon a ion-icon:hover{
+  color: #48D1CC;
+}
+.foot-1{
+  width: 40%;
+  min-height: 230px;
+/* Chô này đẻ backgruod */
+  margin: auto;
+  float: right;
+}
+#foot-in1{
+  padding-right: 150px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly ;
+}
+ul#foot-font1 a{
+  line-height: 2;
+  color: #000000;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+ul#foot-font1 a:hover{
+  color: #48D1CC;
+}
+#foot-font2{
+  font-family: 'Changa', sans-serif;
+  color: #404040;
+  font-size: 27px;
+}
+/* Cuối cùng  */
+.indo-lop{
+  width: 100%;
+  min-height: 35px;
+  background-color:#AA8A60;
+  margin: auto;
+  float: left;
+}
+.indo-lop p{
+  padding-top: 3px;
+}
+.indo-lop span{
+  font-family: 'Changa', sans-serif;
+  color:whitesmoke;
+  font-size: 20px;
+  transition: all .5s;
+}
+.indo-lop > a >p{
+  color: #000;
+  font-size: 17px;
+}
+.indo-lop span:hover{
+ color:#48D1CC;
+}
