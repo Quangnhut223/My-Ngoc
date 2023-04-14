@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* background-color: #DBDCDD; */
+}
+
+/* css slide */
+/* .slide {
+    margin-top: 10px;
+} */
+#phai,
+#trai {
+    position: absolute;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.dut {
+    display: none;
+}
+
+#trai:active,
+#phai:active {
+    font-size: 45px;
+}
+
+#trai {
+    top: 50%;
+    left: 1%;
+}
+
+#phai {
+    top: 50%;
+    right: 1%;
+}
+
+#trai:hover {
+    color: #AA8A60;
+}
+
+#phai:hover {
+    color: #AA8A60;
+}
+
+.container {
+    width: 1200px;
+    min-height: 3350px;
+    margin: auto;
+}
+
+#giua {
+    position: absolute;
+    font-size: 20px;
+    bottom: 0%;
+    right: 45%;
+    color: black;
+}
+
+.hot {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 30px;
+}
+
+.hot h3 {
+    color:#002145;
+}
+
+.column {
+    width: 100%;
+    float: left;
+}
+
+.san-pham {
+    width: 80%;
+    padding: 10px;
+    margin: 7%;
+    text-align: center;
+}
+
+.san-pham .ten {
+    margin-top: 17px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 17px;
+}
+
+.san-pham img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    max-width: 100%;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.san-pham img:hover {
+    transform: scale(1.1);
+}
+
+.san-pham .gia {
+    padding-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.san-pham .gia del {
+    color: gray;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.slick-next {
+    opacity: 0.2;
+    top: 35%;
+    right: -1%;
+}
+
+.slick-prev {
+    opacity: 0.2;
+    z-index: 2;
+    top: 35%;
+    left: -1%;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 10;
+    transform: scale(1.1);
+}
+
+.xemthem {
+    margin-top: 20px;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.xemthem p {
+    text-align: center;
+    width: 150px;
+    line-height: 45px;
+    background-color: #002145;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.conten2 {
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+
+.conten2 .khung {
+    width: 45%;
+    height: 250px;
+    margin: auto;
+    background-color: aliceblue;
+
+    /* background-image: url(/img/mau\ \(5\).png);
+    background-size: cover; */
+}
+
+.conten2 .khung,
+#img {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0px
+}
+
+.khung img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Sản phẩm mới */
+.tensp {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 30px;
+}
+
+.tensp h3 {
+    padding-top: 50px;
+    color: #002145;
+}
+
+.sp-moi {
+   
+    float: left;
+    height: 350px;
+    width: 20%;
+}
+.sp-moi2 {
+   
+    float: left;
+    height: 350px;
+    width: 25%;
+}
+.col-spm {
+    text-align: center;
+    width: 85%;
+    margin: 20px;
+   
+    float: left;
+}
+
+.spm img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    transition: all .5s;
+    border-radius: 5px;
+}
+.spm .ten {
+    margin-top: 17px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 17px;
+}
+.spm ul{
+    width: 50px;
+    font-size: 25px;
+    display: none;
+    list-style: none;
+    position:relative;
+    left:  160px;
+    bottom: 95px;
+    height: 0px;
+}
+.spm:hover>ul{  
+    display: block; 
+}
+.spm:hover>.ten{
+    color: #002145;
+}
+.spm:hover>img{
+    transform: scale(1.06);
+}
+.spm ul .click{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #b9d6f3;
+    color: black;
+}
+#canhClick{
+    margin-left: 100%;
+}
+.spm ul .click:hover{
+    background-color: white;
+    color: #002145;
+}
+.spm .gia {
+    padding-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.spm .gia del {
+    color: gray;
+}
+
+.bot {
+    clear: both;
+}
+.conten1{
+    width: 100%;
+    height: auto;
+}
+.conten1 .ten2{
+    margin-top: 80px;
+    width: 100%;
+    height: 270px;
+}
+.conten1 .ten2 #img2{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+.con
+/* Đơn giản sơn tron */
+.oll{
+    margin-top: 50px;
+}
+.olling{
+    height: 350px;
+}
+
+.dgst-next{
+    padding-right: 10px;
+    width: 30px;
+    height: 50px;
+    background-color:#b9d6f3;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    transition: all .5s ;
+}
+
+.dgst-prev{
+    padding-right: 10px;
+    width: 40px;
+    height: 50px;
+    background-color:#b9d6f3;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    transition: all .5s ;
+}
+.dgst-spm{
+    margin-left: 15px;
+}
+.dgst-prev:hover,.dgst-next:hover{
+    opacity: 1;
+    transform: scale(0.95);
+}
+.dgst-prev:active,.dgst-next:active{
+    width: 30px;
+    height: 45px;
+}
+/* cc giỏ hàng */
+
+.khungtrai {
+    padding: 0px 10px;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 350px;
+    z-index: 1000;
+}
+#imgGH>img {
+    margin-top: 10%;
+    width: 80%;
+}
+
+#tenGh {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: chocolate;
+}
+
+#giaGh {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 15px;
+}
+
+.pll {
+    width: 30px;
+    height: 20px;
+    font-size: 15px;
+}
+
+#xoa {
+    
+    color: black;
+    font-size: 20px;
+}
+
+#soLuong {
+    padding-left: 5px;
+}
+
+td:first-child {
+    width: 90px;
+}
+
+.socal ul{
+    text-align: center;
+    width: 22%;
+    left: 70%;
+    display: none;
+    position: absolute;
+}
+.socal ul p{
+    font-size: 20px;
+}
+.socal >li:hover>ul{
+    display: block;
+}
+/* Sest khung giỏ hàng */
+.xxx{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.xxx:hover{
+    color: #002145;
+}
+.tt{
+    display: flex;
+   justify-content: space-between;
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.khungTable{
+    height: 250px;
+    overflow-y: scroll;
+}
+#thanhToan{
+    width: 100%;
+    line-height: 40px;
+    background-color: black;
+}
+#thanhToan a{
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    font-size: 22px;
+}
+.contenCart{
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    line-height: 30px;
+}
+.contenCart p{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 22px;
+}
+.dangnhap{
+    background-color: #b9d6f3;
+    width: 700px;
+    height: 300px;
+    margin: 10%  auto 0px ;
+    box-shadow: 0 0 5px rgb(208, 241, 222);
+    position: fixed;
+    z-index: 200;
+}
+.feedback{
+    display: flex;
+    width: 1350px;
+    height: 450px;
+    margin: auto;
+
+}
+.feedback-in{
+    justify-content: center;
+    width: 22%;
+    height: 350px;
+    background-color: #fcf1d8;
+    margin: auto;
+}
+.backtrai{
+    width: 45%;
+    padding: 3% 3%;
+    float: left;
+}
+.backtrai h3{
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    color: #c7a090;
+}
+.backtrai p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+.bakphai{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 41%;
+    height: 200px;
+    float: right;
+
+    
+}
+.bakphai>img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 7px;
+}
+.haha{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+/* css check họ tên */
+.loi{
+    border-radius: 5px;
+    outline: 1.5px red solid;
+}
+#baoloi,#baoloi1,#baoloi2,#baoloi3,#baoloi4,#baoloi5,#baoloi6{
+    line-height: 25px;
+    height: 25px;
+    padding-left: 20px;
+    width: 90%;
+    font-size: 17px;
+    text-align: left;
+    color: red;
+    border: none;
+    outline: none;
+}
+.oke{
+    color: green;
+}
+.u22{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ukks{
+    margin-top: 80px;
+}

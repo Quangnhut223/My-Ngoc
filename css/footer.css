@@ -1,0 +1,194 @@
+/* Fottter */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    clear: both;
+}
+
+.row {
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.phone {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+}
+.row3 ion-icon{
+    color: #b9d6f3;
+    font-size: 25px;
+}
+.row3 p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.pho{
+    margin-top: 20px;
+}
+.colp > a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    padding-left: 10px;
+    color: black;
+    line-height: 15px;
+}
+.colp > a:hover{
+    color: #002145;
+}
+.row .pol{
+    font-size: 20px;
+}
+.row .cod{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.row .pol{
+    font-size: 25px;
+}
+.row .pol a {
+    color: #b9d6f3;
+}
+.row .pol a:hover{
+    color: #002145;
+}
+.row .pol .plo{
+    padding-left: 10px;
+}
+/* đăng nhập & đăng kí */
+#load{
+  
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    position: fixed;
+    top: 15%;
+    right:38%;
+
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    transition: all 1s ;
+}
+.dangkii{
+    width: 350px;
+    height: 600px;
+    text-align: center;
+    position: fixed;
+    top: 15%;
+    right:38%;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    transition: all 1s ; 
+}
+.khungdn{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ll{
+    margin-top: 70px;
+}
+label{
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+.bak{
+    font-size: 16px;    
+    outline: none;
+    border: none;
+    background-color: #002145;
+    border-radius: 5px;
+    width: 95%;
+    line-height: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.ill{
+    font-size: 16px;
+    outline: none;
+    border: 1.2px solid black;
+    border-radius: 5px;
+    width: 90%;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.khungdn > p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.fbgg{
+    display: flex;
+    justify-content: space-around;
+}
+.face,.gg{
+    display: flex;
+    margin-top: 15px;
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.face>img,.gg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+/* Form dăng kí */
+.kll{
+    font-size: 16px;
+    margin-top: 20px;
+    outline: none;
+    border: 1.2px solid black;
+    border-radius: 5px;
+    width: 42.5%;
+    line-height: 40px;
+    padding-left: 10px;
+}
+/* thoát X  dăng kí đăng nhập*/
+.thoatx{
+    font-size: 30px;
+    height: 30px;
+    position: absolute;
+    right:-10px;
+    bottom: 585px;
+    background-color: #002145;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.thoatdn{
+    font-size: 30px;
+    height: 30px;
+    position: absolute;
+    right:-10px;
+    top: -10px;
+    background-color: #002145;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#thongbaoloi{
+    line-height: 30px;
+    height: 30px;
+    text-align: left;
+    padding-left: 10px;
+    color: red;
+}
+form > p{
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+}
+form  span{
+    cursor: pointer;
+    color: #3d5a74;
+}
